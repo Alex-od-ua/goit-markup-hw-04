@@ -371,7 +371,7 @@ p {
   gap: 30px;
 }
 
-.clients-link-list {
+/* .clients-link-list {
   display: flex;
   width: 170px;
   height: 92px;
@@ -379,26 +379,29 @@ p {
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .clients-link {
   display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  /* fill: #afb1b8; */
 }
 
 .clients-icon {
-  fill: #afb1b8;
+  fill: currentColor;
+  /* fill: #afb1b8; */
 }
 
-.clients-section-item:hover .clients-link-list,
-.clients-section-item:hover .clients-icon {
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
   border-color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
-.clients-section-item:focus .clients-link-list,
-.clients-section-item:focus .clients-icon {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 /* Основной контент - портфолио*/
